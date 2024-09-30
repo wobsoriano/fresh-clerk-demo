@@ -1,6 +1,6 @@
 import { type PageProps } from "$fresh/server.ts";
 import { ClerkProvider } from "$fresh_clerk/islands/mod.ts";
-import Header from "../islands/Header.tsx";
+import Header from "../components/Header.tsx";
 import { Partial } from "$fresh/runtime.ts";
 
 export default function App({ Component, state }: PageProps) {
