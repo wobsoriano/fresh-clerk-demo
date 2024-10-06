@@ -1,13 +1,12 @@
-import { UserProfile } from "$fresh_clerk/islands/mod.ts";
-import { defineRoute } from "$fresh/server.ts";
-import { State } from "$fresh_clerk/server/mod.ts";
+import { UserProfile } from '@wobsoriano/fresh-clerk/islands';
+import { define } from '../utils.ts';
 
-export default defineRoute<State>((_req, { state }) => {
+export default define.page(function Page({ state }) {
   if (!state.auth.userId) {
-    return new Response("", {
+    return new Response('', {
       status: 307,
       headers: {
-        location: "/sign-in",
+        location: '/sign-in',
       },
     });
   }
