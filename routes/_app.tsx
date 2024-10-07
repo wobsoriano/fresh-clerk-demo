@@ -1,10 +1,10 @@
-import { type PageProps } from 'fresh';
 import { ClerkProvider } from '@wobsoriano/fresh-clerk/islands';
-import { buildClerkProps } from '@wobsoriano/fresh-clerk/utils';
+import { buildClerkProps } from '@wobsoriano/fresh-clerk/server';
 import Header from '../islands/Header.tsx';
 import { Partial } from 'fresh/runtime';
+import { define } from '../utils.ts'
 
-export default function App({ Component, state }: PageProps) {
+export default define.page(function App({ Component, state }) {
   return (
     <html>
       <head>
@@ -35,4 +35,4 @@ export default function App({ Component, state }: PageProps) {
       </body>
     </html>
   );
-}
+})
