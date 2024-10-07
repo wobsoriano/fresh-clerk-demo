@@ -12,7 +12,7 @@
   "imports": {
     "@fresh/plugin-tailwind": "jsr:@fresh/plugin-tailwind@^0.0.1-alpha.7",
     "@preact/signals": "npm:@preact/signals@^1.3.0",
-    "@wobsoriano/fresh-clerk": "jsr:@wobsoriano/fresh-clerk@^0.0.14",
+    "@wobsoriano/fresh-clerk": "jsr:@wobsoriano/fresh-clerk@^0.0.15",
     "fresh": "jsr:@fresh/core@^2.0.0-alpha.22",
     "preact": "npm:preact@^10.24.2",
     "tailwindcss": "npm:tailwindcss@3.4.3",
@@ -24,5 +24,5 @@
     "jsxImportSource": "preact",
     "jsxPrecompileSkipElements": ["a", "img", "source", "body", "html", "head"]
   },
-  "nodeModulesDir": true
+  "nodeModulesDir": "auto"
 }

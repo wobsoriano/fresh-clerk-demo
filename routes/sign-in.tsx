@@ -1,15 +1,6 @@
 import { SignIn } from '@wobsoriano/fresh-clerk/islands';
 import { define } from '../utils.ts';
 
-export default define.page(function Page({ state }) {
-  if (state.auth.userId) {
-    return new Response('', {
-      status: 307,
-      headers: {
-        location: '/profile',
-      },
-    });
-  }
-
+export default define.page(function Page() {
   return <SignIn />;
 });
