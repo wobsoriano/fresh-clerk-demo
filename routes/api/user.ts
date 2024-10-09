@@ -1,5 +1,5 @@
 import { define } from '../../utils.ts';
-import { clerkClient } from '@wobsoriano/fresh-clerk/server';
+import { clerkClient } from 'fresh-clerk/server';
 
 export const handler = define.handlers({
   async GET(ctx) {

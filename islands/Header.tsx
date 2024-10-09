@@ -1,5 +1,5 @@
-import { UserButton } from '@wobsoriano/fresh-clerk/islands';
-import { useClerkContext } from '@wobsoriano/fresh-clerk/hooks';
+import { UserButton } from 'fresh-clerk/islands';
+import { useClerkContext } from 'fresh-clerk/hooks';
 
 export default function Header() {
   const { auth } = useClerkContext();

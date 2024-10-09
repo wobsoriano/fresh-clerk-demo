@@ -1,5 +1,5 @@
-import { ClerkProvider } from '@wobsoriano/fresh-clerk/islands';
-import { buildClerkProps } from '@wobsoriano/fresh-clerk/server';
+import { ClerkProvider } from 'fresh-clerk/islands';
+import { buildClerkProps } from 'fresh-clerk/server';
 import Header from '../islands/Header.tsx';
 import { Partial } from 'fresh/runtime';
 import { define } from '../utils.ts'
