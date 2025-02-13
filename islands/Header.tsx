@@ -1,5 +1,5 @@
-import { UserButton } from 'fresh-clerk/islands';
-import { useClerkContext } from 'fresh-clerk/hooks';
+import { UserButton } from '@jsrob/fresh-clerk/islands';
+import { useClerkContext } from '@jsrob/fresh-clerk/hooks';
 
 export default function Header() {
   const { auth } = useClerkContext();

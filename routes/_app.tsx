@@ -1,8 +1,8 @@
-import { ClerkProvider } from 'fresh-clerk/islands';
-import { buildClerkProps } from 'fresh-clerk/server';
+import { ClerkProvider } from '@jsrob/fresh-clerk/islands';
+import { buildClerkProps } from '@jsrob/fresh-clerk/server';
 import Header from '../islands/Header.tsx';
 import { Partial } from 'fresh/runtime';
-import { define } from '../utils.ts'
+import { define } from '../utils.ts';
 
 export default define.page(function App({ Component, state }) {
   return (
@@ -35,4 +35,4 @@ export default define.page(function App({ Component, state }) {
       </body>
     </html>
   );
-})
+});

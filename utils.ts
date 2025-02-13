@@ -1,5 +1,5 @@
 import { createDefine } from 'fresh';
-import { type State } from 'fresh-clerk/server';
+import { type State } from '@jsrob/fresh-clerk/server';
 
 export { type State };
 

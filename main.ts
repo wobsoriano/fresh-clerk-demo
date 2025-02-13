@@ -1,6 +1,6 @@
 import { App, fsRoutes, staticFiles } from 'fresh';
 import { type State } from './utils.ts';
-import { clerkPlugin } from 'fresh-clerk/plugin';
+import { clerkPlugin } from '@jsrob/fresh-clerk/plugin';
 
 export const app = new App<State>({ root: import.meta.url });
 app.use(staticFiles());
