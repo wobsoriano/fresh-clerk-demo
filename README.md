@@ -1,16 +1,32 @@
-# Fresh project
+# Fresh Clerk Demo
 
-Your new Fresh project is ready to go. You can follow the Fresh "Getting
-Started" guide here: https://fresh.deno.dev/docs/getting-started
+A simple demo showcasing the integration of [Clerk](https://clerk.com) authentication with [Fresh](https://fresh.deno.dev), using the [@jsrob/fresh-clerk](https://jsr.io/@jsrob/fresh-clerk) package.
 
-### Usage
+## Features
 
-Make sure to install Deno: https://deno.land/manual/getting_started/installation
+- User authentication (Sign up/Sign in)
+- Protected routes
+- User profile management
 
-Then start the project:
+## Development
 
+1. Clone the repository
+
+```bash
+git clone https://github.com/wobsoriano/fresh-clerk-demo.git
+cd fresh-clerk-demo
 ```
-deno task start
+
+2. Configure the environment variables
+
+```bash
+cp .env.example .env
 ```
 
-This will watch the project directory and restart as necessary.
+3. Start the development server
+
+```bash
+deno task dev
+```
+
+

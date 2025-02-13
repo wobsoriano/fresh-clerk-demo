@@ -14,13 +14,7 @@ export default define.page(function App({ Component, state }) {
         <link rel='stylesheet' href='/styles.css' />
       </head>
       <body f-client-nav>
-        <ClerkProvider
-          {...buildClerkProps(state)}
-          afterSignOutUrl='/'
-          signInUrl='/sign-in'
-          signUpUrl='/sign-up'
-          publishableKey={Deno.env.get('CLERK_PUBLISHABLE_KEY')!}
-        >
+        <ClerkProvider {...buildClerkProps(state)}>
           <Header />
           <main class='container mx-auto'>
             <div class='flex items-start justify-center min-h-screen'>
