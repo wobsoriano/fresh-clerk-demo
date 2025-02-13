@@ -1,6 +1,8 @@
 # Fresh Clerk Demo
 
-A simple demo showcasing the integration of [Clerk](https://clerk.com) authentication with [Fresh](https://fresh.deno.dev), using the [@jsrob/fresh-clerk](https://jsr.io/@jsrob/fresh-clerk) package.
+A simple demo showcasing the integration of [Clerk](https://clerk.com)
+authentication with [Fresh](https://fresh.deno.dev), using the
+[@jsrob/fresh-clerk](https://jsr.io/@jsrob/fresh-clerk) package.
 
 ## Features
 
@@ -28,5 +30,3 @@ cp .env.example .env
 ```bash
 deno task dev
 ```
-
-
