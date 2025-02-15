@@ -18,7 +18,7 @@ export default define.page(function App({ Component, state }) {
           <main class='container mx-auto'>
             <div class='flex items-start justify-center min-h-screen'>
               <div class='mt-20'>
-               <Component />
+                <Component />
               </div>
             </div>
           </main>

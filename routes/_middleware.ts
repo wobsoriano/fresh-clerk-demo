@@ -1,16 +1,17 @@
 import { define } from '../utils.ts';
+import { createRouteMatcher } from '@jsrob/fresh-clerk/server';
+
+const isPublicPage = createRouteMatcher(['/sign-in', '/sign-up']);
+const isProtectedPage = createRouteMatcher(['/profile']);
 
 export default define.middleware((ctx) => {
-  const publicRoutes = ['/sign-in', '/sign-up'];
-  const privateRoutes = ['/profile'];
+  const { userId } = ctx.state.auth;
 
-  const { auth } = ctx.state;
-
-  if (auth.userId && publicRoutes.includes(ctx.url.pathname)) {
+  if (userId && isPublicPage(ctx)) {
     return ctx.redirect('/profile');
   }
 
-  if (!auth.userId && privateRoutes.includes(ctx.url.pathname)) {
+  if (!userId && isProtectedPage(ctx)) {
     return ctx.redirect('/sign-in');
   }
 
