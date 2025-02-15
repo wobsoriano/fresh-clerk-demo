@@ -1,4 +1,5 @@
 import { define } from '../utils.ts';
+import { SignedIn, SignedOut } from '@jsrob/fresh-clerk/components';
 
 export default define.page(function Page() {
   return (
@@ -7,6 +8,12 @@ export default define.page(function Page() {
       <p>
         A demo for Fresh Clerk. Go ahead and sign up or sign in!
       </p>
+      <SignedIn>
+        <p>Status: Signed in!</p>
+      </SignedIn>
+      <SignedOut>
+        <p>Status: Signed out!</p>
+      </SignedOut>
     </>
   );
 });
