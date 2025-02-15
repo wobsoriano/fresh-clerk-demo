@@ -24,5 +24,5 @@
     "jsxImportSource": "preact",
     "jsxPrecompileSkipElements": ["a", "img", "source", "body", "html", "head"]
   },
-  "nodeModulesDir": true
+  "nodeModulesDir": "auto"
 }
