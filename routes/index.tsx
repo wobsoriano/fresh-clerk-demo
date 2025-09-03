@@ -1,5 +1,5 @@
 import { define } from '../utils.ts';
-import { SignedIn, SignedOut } from '@jsrob/fresh-clerk/components';
+import { SignedIn, SignedOut } from '@jsrob/fresh-clerk';
 
 export default define.page(function Page() {
   return (

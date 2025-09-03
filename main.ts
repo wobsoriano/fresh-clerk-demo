@@ -1,16 +1,10 @@
-import { App, fsRoutes, staticFiles } from 'fresh';
+import { App, staticFiles } from 'fresh';
 import { type State } from './utils.ts';
-import { clerkPlugin } from '@jsrob/fresh-clerk/plugin';
+import { clerkMiddleware } from '@jsrob/fresh-clerk/server';
 
-export const app = new App<State>({ root: import.meta.url });
+export const app = new App<State>();
 app.use(staticFiles());
-clerkPlugin(app);
 
-await fsRoutes(app, {
-  loadIsland: (path) => import(`./islands/${path}`),
-  loadRoute: (path) => import(`./routes/${path}`),
-});
+app.use(clerkMiddleware());
 
-if (import.meta.main) {
-  await app.listen();
-}
+app.fsRoutes();
